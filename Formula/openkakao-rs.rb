@@ -1,21 +1,16 @@
 class OpenkakaoRs < Formula
   desc "Rust rewrite of OpenKakao CLI"
   homepage "https://github.com/JungHoonGhae/openkakao"
-  version "0.1.3"
+  url "https://github.com/JungHoonGhae/openkakao/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "ef24160f2ae60498a01ed138fcb8535f22203fa82486b9186d75e2fdf9e8853b"
   license "MIT"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/openkakao/releases/download/openkakao-rs-v0.1.3/openkakao-rs-aarch64-apple-darwin.tar.gz"
-      sha256 "7f0d4267e548916e849e17f35e29bfa1f7cd563ee8a90777798d21f06e97b366"
-    else
-      url "https://github.com/JungHoonGhae/openkakao/releases/download/openkakao-rs-v0.1.3/openkakao-rs-x86_64-apple-darwin.tar.gz"
-      sha256 "fc1af5dd6cbb0390c718d82895698c10d567a7fbcdf1369650d46a3debd8e887"
-    end
-  end
+  depends_on "rust" => :build
 
   def install
-    bin.install "openkakao-rs"
+    cd "openkakao-rs" do
+      system "cargo", "install", *std_cargo_args
+    end
   end
 
   test do
