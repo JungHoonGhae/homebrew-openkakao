@@ -1,8 +1,8 @@
 class OpenkakaoRs < Formula
-  desc "Rust rewrite of OpenKakao CLI"
+  desc "KakaoTalk CLI client with REST API and LOCO protocol support"
   homepage "https://github.com/JungHoonGhae/openkakao"
-  url "https://github.com/JungHoonGhae/openkakao/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "ef24160f2ae60498a01ed138fcb8535f22203fa82486b9186d75e2fdf9e8853b"
+  url "https://github.com/JungHoonGhae/openkakao/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "1870566ad112b9e5f3b5277ecdaf0e186e179a563ec00c3d2b699a579216a3b7"
   license "MIT"
 
   depends_on "rust" => :build
