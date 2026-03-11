@@ -1,16 +1,16 @@
 class OpenkakaoRs < Formula
   desc "Rust rewrite of OpenKakao CLI"
   homepage "https://github.com/JungHoonGhae/openkakao"
-  version "0.9.2"
+  version "0.9.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/openkakao/releases/download/v0.9.2/openkakao-rs-aarch64-apple-darwin.tar.gz"
-      sha256 "9f632bd6a122cfd9d89fd01f6de1a648ca0fdd5e8d9e9a952aff07e3532f192f"
+      url "https://github.com/JungHoonGhae/openkakao/releases/download/v0.9.3/openkakao-rs-aarch64-apple-darwin.tar.gz"
+      sha256 "178b74353284650ea450e63b106fc1f068ee330e655b8e27d79a96a0ebaa7865"
     else
-      url "https://github.com/JungHoonGhae/openkakao/releases/download/v0.9.2/openkakao-rs-x86_64-apple-darwin.tar.gz"
-      sha256 "71c8dd31e5bc626ba012510d13f0eb21b6da30ec46f0db0b6a17611a7f538e78"
+      url "https://github.com/JungHoonGhae/openkakao/releases/download/v0.9.3/openkakao-rs-x86_64-apple-darwin.tar.gz"
+      sha256 "2df96b3f353948d67e8d4bd7893e5ed7383860a111c27f132d1bd64c4bc5042b"
     end
   end
 
