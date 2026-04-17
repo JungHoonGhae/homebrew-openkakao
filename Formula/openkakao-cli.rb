@@ -1,5 +1,5 @@
-class OpenkakaoRs < Formula
-  desc "Rust rewrite of OpenKakao CLI"
+class OpenkakaoCli < Formula
+  desc "Unofficial KakaoTalk CLI for macOS"
   homepage "https://github.com/JungHoonGhae/openkakao-cli"
   version "1.2.0"
   license "MIT"
