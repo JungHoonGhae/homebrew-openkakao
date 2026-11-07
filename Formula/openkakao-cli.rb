@@ -1,16 +1,16 @@
 class OpenkakaoCli < Formula
   desc "Unofficial KakaoTalk CLI for macOS"
   homepage "https://github.com/JungHoonGhae/openkakao-cli"
-  version "1.15.0"
+  version "1.15.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/openkakao-cli/releases/download/v1.15.0/openkakao-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "5e626e80affbd89d9267c86db22c61119f30ab71fc5b705096aa1c36c35e65dd"
+      url "https://github.com/JungHoonGhae/openkakao-cli/releases/download/v1.15.1/openkakao-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "e21a4d0c9ad1ac9e553c1808402abae430f360079374dcbe5f1743b6a1b9e9fc"
     else
-      url "https://github.com/JungHoonGhae/openkakao-cli/releases/download/v1.15.0/openkakao-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "97582178d043d4a4a0ffd77741068818ba7e278af0397f61127b3d78732c7351"
+      url "https://github.com/JungHoonGhae/openkakao-cli/releases/download/v1.15.1/openkakao-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "83ed3d6633b805c7d38f08a0e57e3299611569a162a978845746929690636943"
     end
   end
 
